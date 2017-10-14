@@ -1,0 +1,465 @@
+﻿add_namespace = phi_news
+
+#Arroyo wins the presidency
+news_event = {
+	id = phi_news.1
+	title = phi_news.newPresident.t
+	desc = phi_news.1.d
+	picture = GFX_news_event_arroyo
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#FPJ wins the presidency
+news_event = {
+	id = phi_news.2
+	title = phi_news.newPresident.t
+	desc = phi_news.2.d
+	picture = GFX_news_event_fpj
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Panfilo Lacson wins the presidency
+news_event = {
+	id = phi_news.3
+	title = phi_news.newPresident.t
+	desc = phi_news.3.d
+	picture = GFX_news_event_lacson
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Raul Roco wins the presidency
+news_event = {
+	id = phi_news.4
+	title = phi_news.newPresident.t
+	desc = phi_news.4.d
+	picture = GFX_news_event_roco
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Eddie Villanueva wins the presidency
+news_event = {
+	id = phi_news.5
+	title = phi_news.newPresident.t
+	desc = phi_news.5.d
+	picture = GFX_news_event_villanueva
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Benigno Aquino III wins the presidency
+news_event = {
+	id = phi_news.6
+	title = phi_news.newPresident.t
+	desc = phi_news.6.d
+	picture = GFX_news_event_aquino
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Joseph Estrada wins the presidency
+news_event = {
+	id = phi_news.7
+	title = phi_news.newPresident.t
+	desc = phi_news.7.d
+	picture = GFX_news_event_estrada
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Manny Villar wins the presidency
+news_event = {
+	id = phi_news.8
+	title = phi_news.newPresident.t
+	desc = phi_news.8.d
+	picture = GFX_news_event_villar
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Gilbert Teodoro wins the presidency
+news_event = {
+	id = phi_news.9
+	title = phi_news.newPresident.t
+	desc = phi_news.9.d
+	picture = GFX_news_event_teodoro
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Eddie Villanueva wins the presidency 2010
+news_event = {
+	id = phi_news.10
+	title = phi_news.newPresident.t
+	desc = phi_news.10.d
+	picture = GFX_news_event_villanueva_2010
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Richard Gordon wins the presidency
+news_event = {
+	id = phi_news.11
+	title = phi_news.newPresident.t
+	desc = phi_news.11.d
+	picture = GFX_news_event_gordon
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Rodrigo Duterte wins the presidency
+news_event = {
+	id = phi_news.12
+	title = phi_news.newPresident.t
+	desc = phi_news.12.d
+	picture = GFX_news_event_duterte
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Mar Roxas wins the presidency
+news_event = {
+	id = phi_news.13
+	title = phi_news.newPresident.t
+	desc = phi_news.13.d
+	picture = GFX_news_event_roxas
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Grace Poe wins the presidency
+news_event = {
+	id = phi_news.14
+	title = phi_news.newPresident.t
+	desc = phi_news.14.d
+	picture = GFX_news_event_poe
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Jejomar Binay wins the presidency
+news_event = {
+	id = phi_news.15
+	title = phi_news.newPresident.t
+	desc = phi_news.15.d
+	picture = GFX_news_event_binay
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Miriam Defensor Santiago wins the presidency
+news_event = {
+	id = phi_news.16
+	title = phi_news.newPresident.t
+	desc = phi_news.16.d
+	picture = GFX_news_event_santiago
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.newPresident.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.newPresident.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Second EDSA Revolution
+news_event = {
+	id = phi.news.17
+	title = phi_news.edsa2
+	desc = phi_news.17.d
+	picture = GFX_news_event_edsa2
+	
+	major = yes
+	
+	option = {
+		name = phi_news.edsa2.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.edsa2.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}
+
+#Joseph Estrada resigns from the presidency
+news_event = {
+	id = phi.news.18
+	title = phi_news.estrada_resigns
+	desc = phi_news.18.d
+	picture = GFX_news_event_estrada_resigns
+	
+	major = yes
+	
+	option = {
+		name = phi_news.estrada_resigns.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.estrada_resigns.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}

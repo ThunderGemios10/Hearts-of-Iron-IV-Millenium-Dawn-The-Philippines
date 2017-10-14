@@ -1,0 +1,124 @@
+spriteTypes = {
+
+	# Election reports
+	spriteType = {
+		name = "GFX_report_event_PHI_election_2004"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/philippines/election_2004.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_PHI_election_2010"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/philippines/election_2010.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_PHI_election_2016"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/philippines/election_2016.dds"
+	}
+	
+	# Election news
+	
+	# 2004 election
+	spriteType = {
+		name = "GFX_news_event_arroyo"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_arroyo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_fpj"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_fpj.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_lacson"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_lacson.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_roco"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_roco.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_villanueva"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_villanueva.dds"
+	}
+	
+	# 2010 election
+	spriteType = {
+		name = "GFX_news_event_aquino"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_aquino.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_estrada"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_estrada.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_villar"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_villar.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_teodoro"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_teodoro.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_villanueva_2010"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_villanueva_2010.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_gordon"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_gordon.dds"
+	}
+	
+	# 2016 election
+	spriteType = {
+		name = "GFX_news_event_duterte"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_duterte.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_roxas"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_roxas.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_poe"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_poe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_binay"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_binay.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_santiago"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_santiago.dds"
+	}
+	
+	# News Event
+	spriteType = {
+		name = "GFX_news_event_edsa2"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_edsa2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_estrada_resigns"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_estrada_resigns.dds"
+	}
+	
+	# News Report
+	spriteType = {
+		name = "GFX_report_event_edsa2"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/event_edsa2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_estrada_resigns"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/event_estrada_resigns.dds"
+	}

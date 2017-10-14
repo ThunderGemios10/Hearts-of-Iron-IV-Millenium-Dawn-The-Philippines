@@ -1,0 +1,63 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_ideology_PHI_nationalist_group"
+		texturefile = "gfx/interface/ideologies/PHI/nationalist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_PHI_progressive_group"
+		texturefile = "gfx/interface/ideologies/PHI/progressive.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_PHI_reactionary_group"
+		texturefile = "gfx/interface/ideologies/PHI/reactionary.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_PHI_conservative_group"
+		texturefile = "gfx/interface/ideologies/PHI/conservative.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_PHI_market_liberal_group"
+		texturefile = "gfx/interface/ideologies/PHI/market_liberal.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_PHI_social_liberal_group"
+		texturefile = "gfx/interface/ideologies/PHI/social_liberal.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_PHI_social_democrat_group"
+		texturefile = "gfx/interface/ideologies/PHI/social_democrat.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_PHI_democratic_socialist_group"
+		texturefile = "gfx/interface/ideologies/PHI/democratic_socialist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_PHI_communist_group"
+		texturefile = "gfx/interface/ideologies/PHI/communist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_PHI_monarchist_group"
+		texturefile = "gfx/interface/ideologies/PHI/monarchist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_PHI_islamist_group"
+		texturefile = "gfx/interface/ideologies/PHI/islamist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_PHI_fascist_group"
+		texturefile = "gfx/interface/ideologies/PHI/fascist.dds"
+	}
+	
+}

@@ -1,0 +1,596 @@
+﻿add_namespace = election_PHI
+
+################### ELECTIONS #########################
+
+#2004
+country_event = {
+	id = election_PHI.1
+	title = election_PHI.1.t
+	desc = election_PHI.1.d
+	picture = GFX_report_event_PHI_election_2004
+
+	is_triggered_only = yes
+	
+	trigger = {
+		original_tag = PHI
+		date > 2004.5.10
+		date < 2005.1.1
+		not = { has_country_flag = phi_election_2004 }
+	}
+	
+	immediate = {
+		set_country_flag = phi_election_2004
+	}
+	
+	option = {	#Arroyo
+		name = election_PHI.1.o1
+		ai_chance = {
+			factor = 60
+		}
+		hidden_effect = { country_event = phi.25 }
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.03
+		}
+		create_country_leader = {
+			name = "Gloria Macapagal-Arroyo"
+			desc = "POLITICIAN_PHI_ARROYO_DESC"
+			picture = "Gloria_Macapagal-Arroyo.dds"
+			expire = "2050.1.1"
+			ideology = christian_democrat
+			
+			traits = {
+			
+			}
+		}
+		add_political_power = 15
+		set_country_flag = phi_arroyo_victory_2004
+		
+		news_event = {
+			id = phi_news.1
+			hours = 6
+		}
+	}
+	
+	option = {	#FPJ
+		name = election_PHI.1.o2
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.03
+		}
+		create_country_leader = {
+			name = "Fernando Poe Jr."
+			desc = "POLITICIAN_PHI_FPJ_DESC"
+			picture = "Fernando_Poe_Jr.dds"
+			expire = "2050.1.1"
+			ideology = libertarian
+			
+			traits = {
+				popular_figurehead
+			}
+		}
+		add_political_power = -15
+		set_country_flag = phi_fpj_victory_2004
+		
+		news_event = {
+			id = phi_news.2
+			hours = 6
+		}
+	}
+	
+	option = {	#Lacson
+		name = election_PHI.1.o3
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.03
+		}
+		create_country_leader = {
+			name = "Panfilo Lacson"
+			desc = "POLITICIAN_PHI_LACSON_DESC"
+			picture = "Panfilo_Lacson.dds"
+			expire = "2050.1.1"
+			ideology = libertarian
+			
+			traits = {
+			
+			}
+		}
+		add_political_power = -15
+		set_country_flag = phi_lacson_victory_2004
+		
+		news_event = {
+			id = phi_news.3
+			hours = 6
+		}
+	}
+	
+	option = {	#Roco
+		name = election_PHI.1.o4
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = progressive
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = progressive
+			popularity = 0.03
+		}
+		create_country_leader = {
+			name = "Raul Roco"
+			desc = "POLITICIAN_PHI_ROCO_DESC"
+			picture = "Raul_Roco.dds"
+			expire = "2050.1.1"
+			ideology = progressive_ideology
+			
+			traits = {
+			
+			}
+		}
+		add_political_power = -15
+		set_country_flag = phi_roco_victory_2004
+		
+		news_event = {
+			id = phi_news.4
+			hours = 6
+		}
+	}
+	
+	option = {	#Villanueva
+		name = election_PHI.1.o5
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.03
+		}
+		create_country_leader = {
+			name = "Eddie Villanueva"
+			desc = "POLITICIAN_PHI_VILLANUEVA_DESC"
+			picture = "Eddie_Villanueva.dds"
+			expire = "2050.1.1"
+			ideology = christian_democrat
+			
+			traits = {
+			
+			}
+		}
+		add_political_power = -15
+		set_country_flag = phi_villanueva_victory_2004
+		
+		news_event = {
+			id = phi_news.5
+			hours = 6
+		}
+	}
+}
+
+#2010
+country_event = {
+	id = election_PHI.2
+	title = election_PHI.2.t
+	desc = {
+		text = election_PHI.2.d
+	}
+	#desc = {
+		#text = election_PHI.2.d2
+		#trigger = {
+			#has_country_flag = phi_fpj_victory_2004
+	#	}
+	#}
+	picture = GFX_report_event_PHI_election_2010
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		original_tag = PHI
+		date > 2010.5.10
+		date < 2011.1.1
+		not = {
+			has_country_flag = phi_election_2010
+		}
+	}
+	
+	option = {	#Aquino
+		name = election_PHI.2.o1
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.03
+		}
+		add_political_power = 20
+		ai_chance = {
+			factor = 75
+		}
+		set_country_flag = phi_aquino_victory_2010
+		
+		news_event = {
+			id = phi_news.6
+			hours = 6
+		}
+	}
+	
+	option = {	#Estrada
+		name = election_PHI.2.o2
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = democratic_socialist
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = democratic_socialist
+			popularity = 0.03
+		}
+		add_political_power = 20
+		ai_chance = {
+			factor = 75
+		}
+		set_country_flag = phi_estrada_victory_2010
+		
+		news_event = {
+			id = phi_news.7
+			hours = 6
+		}
+	}
+	
+	option = {	#Villar
+		name = election_PHI.2.o3
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = nationalist
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.03
+		}
+		add_political_power = 20
+		ai_chance = {
+			factor = 75
+		}
+		set_country_flag = phi_villar_victory_2010
+		
+		news_event = {
+			id = phi_news.8
+			hours = 6
+		}
+	}
+	
+	option = {	#Teodoro
+		name = election_PHI.2.o4
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.03
+		}
+		add_political_power = 20
+		ai_chance = {
+			factor = 75
+		}
+		set_country_flag = phi_teodoro_victory_2010
+		
+		news_event = {
+			id = phi_news.9
+			hours = 6
+		}
+	}
+	
+	option = {	#Villanueva
+		name = election_PHI.2.o5
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.03
+		}
+		create_country_leader = {
+			name = "Eddie Villanueva"
+			desc = "POLITICIAN_PHI_VILLANUEVA_DESC"
+			picture = "Eddie_Villanueva.dds"
+			expire = "2050.1.1"
+			ideology = christian_democrat
+			
+			traits = {
+			
+			}
+		}
+		add_political_power = -15
+		set_country_flag = phi_villanueva_victory_2010
+		
+		news_event = {
+			id = phi_news.10
+			hours = 6
+		}
+	}
+	
+	option = {	#Gordon
+		name = election_PHI.2.o6
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.03
+		}
+		create_country_leader = {
+			name = "Richard Gordon"
+			desc = "POLITICIAN_PHI_GORDON_DESC"
+			picture = "Richard_Gordon.dds"
+			expire = "2050.1.1"
+			ideology = fiscal_conservative
+			
+			traits = {
+			
+			}
+		}
+		add_political_power = -15
+		set_country_flag = phi_gordon_victory_2010
+		
+		news_event = {
+			id = phi_news.11
+			hours = 6
+		}
+	}
+}
+
+#2016
+country_event = {
+	id = election_PHI.3
+	title = election_PHI.3.t
+	desc = {
+		text = election_PHI.3.d
+	}
+	picture = GFX_report_event_PHI_election_2016
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		original_tag = PHI
+		date > 2016.5.10
+		date < 2017.1.1
+		not = {
+			has_country_flag = phi_election_2016
+		}
+	}
+	
+	option = {	#Duterte
+		name = election_PHI.3.o1
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.03
+		}
+		add_political_power = 20
+		ai_chance = {
+			factor = 75
+		}
+		set_country_flag = phi_duterte_victory_2016
+		
+		news_event = {
+			id = phi_news.12
+			hours = 6
+		}
+	}
+	
+	option = {	#Roxas
+		name = election_PHI.3.o2
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.03
+		}
+		add_political_power = 20
+		ai_chance = {
+			factor = 75
+		}
+		set_country_flag = phi_roxas_victory_2016
+		
+		news_event = {
+			id = phi_news.13
+			hours = 6
+		}
+	}
+	
+	option = {	#Poe
+		name = election_PHI.3.o3
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = progressive
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = progressive
+			popularity = 0.03
+		}
+		add_political_power = 20
+		ai_chance = {
+			factor = 75
+		}
+		set_country_flag = phi_poe_victory_2016
+		
+		news_event = {
+			id = phi_news.14
+			hours = 6
+		}
+	}
+	
+	option = {	#Binay
+		name = election_PHI.3.o4
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.03
+		}
+		create_country_leader = {
+			name = "Jejomar Binay"
+			picture = "Jejomar_Binay.dds"
+			ideology = social_democrat_ideology
+		}
+		add_political_power = 20
+		ai_chance = {
+			factor = 75
+		}
+		set_country_flag = phi_binay_victory_2016
+		
+		news_event = {
+			id = phi_news.15
+			hours = 6
+		}
+	}
+	
+	option = {	#Santiago
+		name = election_PHI.3.o5
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = progressive
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = progressive
+			popularity = 0.03
+		}
+		create_country_leader = {
+			name = "Miriam Defensor Santiago"
+			picture = "Miriam_Defensor_Santiago.dds"
+			ideology = progressive_ideology
+		}
+		add_political_power = -15
+		set_country_flag = phi_santiago_victory_2016
+		
+		news_event = {
+			id = phi_news.16
+			hours = 6
+		}
+	}
+}
