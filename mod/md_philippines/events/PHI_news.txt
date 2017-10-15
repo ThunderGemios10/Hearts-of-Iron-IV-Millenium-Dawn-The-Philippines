@@ -418,12 +418,14 @@ news_event = {
 
 #Second EDSA Revolution
 news_event = {
-	id = phi.news.17
+	id = phi_news.17
 	title = phi_news.edsa2
 	desc = phi_news.17.d
 	picture = GFX_news_event_edsa2
 	
 	major = yes
+	
+	is_triggered_only = yes
 	
 	option = {
 		name = phi_news.edsa2.o1
@@ -442,12 +444,14 @@ news_event = {
 
 #Joseph Estrada resigns from the presidency
 news_event = {
-	id = phi.news.18
+	id = phi_news.18
 	title = phi_news.estrada_resigns
 	desc = phi_news.18.d
 	picture = GFX_news_event_estrada_resigns
 	
 	major = yes
+	
+	is_triggered_only = yes
 	
 	option = {
 		name = phi_news.estrada_resigns.o1

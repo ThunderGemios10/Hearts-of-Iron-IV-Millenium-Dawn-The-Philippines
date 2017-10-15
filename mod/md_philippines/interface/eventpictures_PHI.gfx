@@ -115,10 +115,10 @@ spriteTypes = {
 	# News Report
 	spriteType = {
 		name = "GFX_report_event_edsa2"
-		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/event_edsa2.dds"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/philippines/event_edsa2.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_report_event_estrada_resigns"
-		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/event_estrada_resigns.dds"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/philippines/event_estrada_resigns.dds"
 	}

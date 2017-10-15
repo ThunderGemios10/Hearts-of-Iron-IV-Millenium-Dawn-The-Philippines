@@ -8,12 +8,11 @@ country_event = {
 	picture = GFX_report_event_edsa2
 	
 	fire_only_once = yes
-	is_triggered_only = yes
 	
 	trigger = {
 		original_tag = PHI
-		date > 2001.1.17
-		date < 2002.1.1
+		date > 2000.1.10
+		date < 200.2.1
 		not = { has_country_flag = phi_edsa2 }
 	}
 	
@@ -39,12 +38,11 @@ country_event = {
 	picture = GFX_report_event_estrada_resigns
 	
 	fire_only_once = yes
-	is_triggered_only = yes
 	
 	trigger = {
 		original_tag = PHI
-		date > 2001.1.20
-		date < 2002.1.1
+		date > 2000.1.20
+		date < 2000.2.1
 		not = { has_country_flag = phi_estrada_resigns }
 		has_country_flag = phi_edsa2
 	}
@@ -53,13 +51,25 @@ country_event = {
 		set_country_flag = phi_estrada_resigns
 	}
 	
-	set_politics = {
-		ruling_party = conservative
-		elections_allowed = yes
-	}
-	
 	option = {
 		name = phi.2.o1
+		
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}
+		
+		create_country_leader = {
+			name = "Gloria Macapagal-Arroyo"
+			desc = "POLITICIAN_PHI_ARROYO_DESC"
+			picture = "Gloria_Macapagal-Arroyo.dds"
+			expire = "2050.1.1"
+			ideology = christian_democrat
+			
+			traits = {
+			
+			}
+		}
 		
 		news_event = {
 			hours = 6
