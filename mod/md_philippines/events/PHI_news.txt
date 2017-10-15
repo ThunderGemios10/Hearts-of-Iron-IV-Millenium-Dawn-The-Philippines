@@ -467,3 +467,29 @@ news_event = {
 		}
 	}
 }
+
+#Death of Miriam Defensor Santiago
+news_event = {
+	id = phi_news.19
+	title = phi_news.santiago_death
+	desc = phi_news.19.d
+	picture = GFX_news_event_santiago_death
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = phi_news.santiago_death.o1
+		trigger = {
+			original_tag = PHI
+		}
+	}
+	
+	option = {
+		name = phi_news.santiago_death.o2
+		trigger = {
+			NOT = { original_tag = PHI }
+		}
+	}
+}

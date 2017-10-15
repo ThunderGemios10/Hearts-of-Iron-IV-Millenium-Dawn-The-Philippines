@@ -112,6 +112,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_estrada_resigns.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_news_event_santiago_death"
+		texturefile = "gfx/event_pictures/news_event/specific_countries/philippines/news_event_santiago_death.dds"
+	}
+	
 	# News Report
 	spriteType = {
 		name = "GFX_report_event_edsa2"
@@ -121,4 +126,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_estrada_resigns"
 		texturefile = "gfx/event_pictures/report_event/specific_countries/philippines/event_estrada_resigns.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_santiago_death"
+		texturefile = "gfx/event_pictures/report_event/specific_countries/philippines/event_santiago_death.dds"
 	}
