@@ -12,7 +12,7 @@ country_event = {
 	trigger = {
 		original_tag = PHI
 		date > 2000.1.10
-		date < 200.2.1
+		date < 2000.2.1
 		not = { has_country_flag = phi_edsa2 }
 	}
 	
