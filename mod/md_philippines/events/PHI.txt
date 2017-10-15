@@ -91,8 +91,10 @@ country_event = {
 		original_tag = PHI
 		date > 2016.9.29
 		date < 2017.1.1
-		not = { has_country_flag = phi_santiago_death }
+		not = {
 		has_country_flag = phi_santiago_death
+		has_country_flag = phi_santiago_victory_2016
+		}
 	}
 	
 	immediate = {
