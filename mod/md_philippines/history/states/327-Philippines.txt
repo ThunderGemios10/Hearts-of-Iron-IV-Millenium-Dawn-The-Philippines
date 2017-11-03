@@ -23,12 +23,24 @@ state=
 				naval_base = 7
 			}
 		}
-		victory_points = {
-			10265 15 
-		}
-		victory_points = {
-			1221 1 
-		}
+		victory_points = { 10241 1 }
+		victory_points = { 4350 1 }
+		victory_points = { 7325 1 }
+		victory_points = { 12253 1 }
+		victory_points = { 4423 1 }
+		victory_points = { 4228 1 }
+		victory_points = { 12279 1 }
+		victory_points = { 7307 1 }
+		victory_points = { 4429 1 }
+		victory_points = { 1311 1 }
+		victory_points = { 1224 1 }
+		victory_points = { 1261 1 }
+		victory_points = { 1368 1 }
+		victory_points = { 1293 1 }
+		victory_points = { 1407 1 }
+		victory_points = { 4427 1 }
+		victory_points = { 1421 1 }
+		victory_points = { 10243 1 }
 		add_core_of = PHI
 	}
 

@@ -111,3 +111,39 @@ country_event = {
 		}
 	}
 }
+
+#The Battle of Marawi
+#country_event = {
+#	id = phi.4
+#	title = phi.4.t
+#	desc = phi.4.d
+#	picture = GFX_report_event_marawi_crisis
+#	
+#	fire_only_once = yes
+#	
+#	trigger = {		NOT = { has_global_flag = marawi_crisis_over }
+#		tag = PHI
+#		has_defensive_war = no
+#		NOT = { has_government = islamist }
+#		date > 2017.5.1
+#		date < 2017.10.1
+#	}
+#	
+#	immediate = {
+#		set_country_flag = phi_mawari_crisis
+#		add_national_unity = -0.03
+#	}
+#	
+#	option = {
+#		name = phi.4.o1
+#		
+#		hidden_effect = {
+#			ISP = { transfer_state = 10243 }
+#		}
+#		
+#		news_event = {
+#			hours = 6
+#			id = phi_news.20
+#		}
+#	}
+#}

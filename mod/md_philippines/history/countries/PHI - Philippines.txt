@@ -225,6 +225,12 @@ create_corps_commander = {
 	skill = 1
 }
 
+create_corps_commander = {
+	name = "Rey Leonardo Guerrero"
+	picture = "generals/Rey_Leonardo_Guerrero.dds"
+	skill = 2
+}
+
 create_navy_leader = {
 	name = "Caeser Taccad"
 	picture = "admirals/Caeser_Taccad.dds"

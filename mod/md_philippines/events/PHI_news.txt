@@ -493,3 +493,29 @@ news_event = {
 		}
 	}
 }
+
+#The Battle of Marawi
+#news_event = {
+#	id = phi_news.20
+#	title = phi_news.marawi_crisis
+#	desc = phi_news.20.d
+#	picture = GFX_news_event_marawi_crisis
+#	
+#	major = yes
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = phi_news.marawi_crisis.o1
+#		trigger = {
+#			original_tag = PHI
+#		}
+#	}
+#	
+#	option = {
+#		name = phi_news.marawi_crisis.o2
+#		trigger = {
+#			NOT = { original_tag = PHI }
+#		}
+#	}
+#}
