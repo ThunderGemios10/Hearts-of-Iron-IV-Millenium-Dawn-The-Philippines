@@ -8,7 +8,7 @@ country_event = {
 	trigger = {
 	tag = PHI
 	country_exists = PHI
-	PHI = { has_war = yes }
+	PHI = has_war = yes
 	}
 	
 	mean_time_to_happen = { days = 2 }
@@ -24,7 +24,7 @@ country_event = {
 	trigger = {
 	tag = PHI
 	country_exists = PHI
-	PHI = { NOT = { has_war = yes } }
+	PHI = { NOT = has_war = yes }
 	}
 
 	mean_time_to_happen = { days = 2 }
