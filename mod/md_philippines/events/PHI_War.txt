@@ -1,4 +1,4 @@
-﻿add_namespace = phi
+﻿add_namespace = phi_war
 
 # Change to War Flag
 country_event = {
