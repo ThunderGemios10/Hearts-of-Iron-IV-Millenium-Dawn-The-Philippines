@@ -8,8 +8,14 @@ country_event = {
 	trigger = {
 	tag = PHI
 	country_exists = PHI
-	PHI = has_war = yes
+	PHI = {
+			limit = {
+				has_war = yes
+		
+			}
+		}
 	}
+}
 	
 	mean_time_to_happen = { days = 2 }
 	immediate = { set_cosmetic_tag = phiwar }
@@ -24,8 +30,13 @@ country_event = {
 	trigger = {
 	tag = PHI
 	country_exists = PHI
-	PHI = { NOT = has_war = yes }
+	PHI = {
+		limit = {
+			NOT = { has_war = no }
+		
+		}
 	}
+}
 
 	mean_time_to_happen = { days = 2 }
 	immediate = { drop_cosmetic_tag = yes }
