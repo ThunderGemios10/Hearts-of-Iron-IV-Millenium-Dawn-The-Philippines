@@ -1,0 +1,33 @@
+﻿add_namespace = phi
+
+# Change to War Flag
+country_event = {
+	id = phi_war.1
+	hidden = yes
+
+	trigger = {
+	tag = PHI
+	country_exists = PHI
+	PHI = { has_war = yes }
+	}
+	
+	mean_time_to_happen = { days = 2 }
+	immediate = { set_cosmetic_tag = phiwar }
+	option = { name = phi_war.1.a }
+}
+
+# Change back to Normal Flag
+country_event = {
+	id = phi_war.2
+	hidden = yes
+
+	trigger = {
+	tag = PHI
+	country_exists = PHI
+	PHI = { NOT = { has_war = yes } }
+	}
+
+	mean_time_to_happen = { days = 2 }
+	immediate = { drop_cosmetic_tag = yes }
+	option = { name = phi_war.2.a }
+}
