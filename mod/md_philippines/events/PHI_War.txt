@@ -8,7 +8,7 @@ country_event = {
 	trigger = {
 	tag = PHI
 	country_exists = PHI
-	PHI = { has_war = yes }
+	has_war = yes
 	}
 }
 	
