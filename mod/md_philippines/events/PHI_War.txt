@@ -12,9 +12,17 @@ country_event = {
 	}
 }
 	
-	mean_time_to_happen = { days = 2 }
-	immediate = { set_cosmetic_tag = phiwar }
-	option = { name = phi_war.1.a }
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_cosmetic_tag = phiwar
+	}
+	
+	option = {
+		name = phi_war.1.a
+	}
 }
 
 # Change back to Normal Flag
@@ -33,7 +41,15 @@ country_event = {
 	}
 }
 
-	mean_time_to_happen = { days = 2 }
-	immediate = { drop_cosmetic_tag = yes }
-	option = { name = phi_war.2.a }
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		drop_cosmetic_tag = yes
+	}
+	
+	option = {
+		name = phi_war.2.a
+	}
 }
