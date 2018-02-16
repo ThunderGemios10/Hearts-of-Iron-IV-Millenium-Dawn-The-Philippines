@@ -32,12 +32,7 @@ country_event = {
 	trigger = {
 	tag = PHI
 	country_exists = PHI
-	PHI = {
-		limit = {
-			NOT = { has_war = no }
-		
-		}
-	}
+	has_war = no
 }
 
 	mean_time_to_happen = {
