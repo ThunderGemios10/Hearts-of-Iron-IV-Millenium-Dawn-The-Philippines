@@ -10,7 +10,6 @@ country_event = {
 	country_exists = PHI
 	has_war = yes
 	}
-}
 	
 	mean_time_to_happen = {
 		days = 2
