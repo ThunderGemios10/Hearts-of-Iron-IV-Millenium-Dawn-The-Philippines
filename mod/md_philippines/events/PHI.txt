@@ -99,7 +99,7 @@ country_event = {
 	
 	immediate = {
 		set_country_flag = phi_santiago_death
-		add_national_unity = -0.03
+		add_stability = -0.03
 	}
 	
 	option = {
@@ -131,7 +131,7 @@ country_event = {
 #	
 #	immediate = {
 #		set_country_flag = phi_mawari_crisis
-#		add_national_unity = -0.03
+#		add_stability = -0.03
 #	}
 #	
 #	option = {
