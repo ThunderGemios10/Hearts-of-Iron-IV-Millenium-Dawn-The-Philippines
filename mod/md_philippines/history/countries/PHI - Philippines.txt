@@ -190,7 +190,7 @@ create_country_leader = {
 	ideology = marxist
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Eduardo Ano"
 	picture = "generals/Eduardo_Ano.dds"
 	skill = 2
