@@ -11,8 +11,6 @@ set_country_flag = country_language_filipino
 set_country_flag = country_language_english
 set_country_flag = country_language_spanish
 
-set_country_flag = starting_stability_low
-
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
