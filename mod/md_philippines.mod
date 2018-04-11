@@ -4,4 +4,4 @@ tags={
 	"National Focuses"
 	"Events"
 }
-supported_version="1.5.1"
+supported_version="1.5.2"
