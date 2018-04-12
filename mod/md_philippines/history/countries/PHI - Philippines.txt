@@ -273,7 +273,7 @@ create_navy_leader = {
 	}
 }
 
-2004.5.10 = {
+2004.5.11 = {
 	set_country_flag = phi_arroyo_victory_2004
 	set_politics = {
 		parties = {
@@ -296,7 +296,7 @@ create_navy_leader = {
 	}
 }
 
-2010.5.10 = {
+2010.5.11 = {
 	set_country_flag = phi_aquino_victory_2010
 	set_politics = {
 		parties = {
@@ -319,7 +319,7 @@ create_navy_leader = {
 	}
 }
 
-2016.5.10 = {
+2016.5.11 = {
 	set_country_flag = phi_duterte_victory_2016
 	set_politics = {
 		parties = {
