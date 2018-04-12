@@ -5,6 +5,6 @@ tags={
 	"Events"
 }
 dependencies={ 
-    "millenium_dawn" 
+    "Millennium Dawn: Modern Day Mod" 
 }
 supported_version="1.5.2"
