@@ -124,7 +124,6 @@ bookmarks = {
 			history = "ETH_GATHERING_STORM_DESC"
 			ideology = democratic_socialist
 			ideas = {
-				stability_2
 				african_union_member
 			}
 			focuses = {
@@ -216,7 +215,11 @@ bookmarks = {
 		"PHI"={
 			minor = yes
 			history = "PHI_GATHERING_STORM_DESC"
-			ideology = social_democrat
+			ideology = democratic_socialist
+			ideas = {
+			}
+			focuses = {
+			}
 		}
 		
 		effect = {

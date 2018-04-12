@@ -65,11 +65,6 @@ bookmarks = {
 				idea_united_nations_security_council_member
 			}
 		}
-		"PHI"={
-			minor = yes
-			history = "PHI_GATHERING_STORM_DESC"
-			ideology = social_democrat
-		}
 		
 		"---"={
 			history = "OTHER_BLITZKRIEG_DESC"
