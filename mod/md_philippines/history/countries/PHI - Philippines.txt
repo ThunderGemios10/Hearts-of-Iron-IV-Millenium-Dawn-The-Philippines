@@ -275,9 +275,6 @@ create_navy_leader = {
 
 2004.5.10 = {
 	set_country_flag = phi_arroyo_victory_2004
-}
-
-2004.5.10 = {
 	set_politics = {
 		parties = {
 			islamist = { popularity = 0 }
@@ -300,6 +297,7 @@ create_navy_leader = {
 }
 
 2010.5.10 = {
+	set_country_flag = phi_aquino_victory_2010
 	set_politics = {
 		parties = {
 			islamist = { popularity = 0 }
@@ -322,6 +320,7 @@ create_navy_leader = {
 }
 
 2016.5.10 = {
+	set_country_flag = phi_duterte_victory_2016
 	set_politics = {
 		parties = {
 			islamist = { popularity = 4 }
