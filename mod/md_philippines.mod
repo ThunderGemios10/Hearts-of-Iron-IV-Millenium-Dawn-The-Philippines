@@ -1,4 +1,4 @@
-﻿name="Millenium Dawn: The Philippines"
+﻿name="Millennium Dawn: The Philippines"
 path="mod/md_philippines/"
 tags={
 	"National Focuses"

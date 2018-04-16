@@ -13,7 +13,7 @@ focus_tree = {
 	default = no
 
 	focus = {
-	  id = A1
+	  id = PHI_1
 	  icon = GFX_goal_
 	  x = 1
 	  y = 0
@@ -26,9 +26,9 @@ focus_tree = {
 	}
 
 	focus = {
-	  id = A2
+	  id = PHI_2
 	  icon = GFX_goal_
-	  prerequisite = { focus = A1 }
+	  prerequisite = { focus = PHI_1 }
 	  x = 1
 	  y = 1
 	  cost = 10
@@ -42,9 +42,9 @@ focus_tree = {
 	##A line continues
 
 	focus = {
-	  id = A3
+	  id = PHI_3
 	  icon = GFX_goal_
-	  prerequisite = { focus = A2 }
+	  prerequisite = { focus = PHI_2 }
 	  x = 1
 	  y = 2
 	  cost = 10
@@ -56,9 +56,9 @@ focus_tree = {
 	}
 
 	focus = {
-	  id = A4
+	  id = PHI_4
 	  icon = GFX_goal_
-	  prerequisite = { focus = A3 }
+	  prerequisite = { focus = PHI_3 }
 	  x = 1
 	  y = 3
 	  cost = 10
@@ -70,7 +70,7 @@ focus_tree = {
 	}
 
 	focus = {
-	  id = A5
+	  id = PHI_5
 	  icon = GFX_goal_
 	  prerequisite = { focus = A4 }
 	  x = 1
@@ -86,7 +86,7 @@ focus_tree = {
 	##B line begins
 
 	focus = {
-	  id = B1
+	  id = PHI_6
 	  icon = GFX_goal_
 	  prerequisite = { focus = A2 }
 	  x = 3
@@ -100,7 +100,7 @@ focus_tree = {
 	}
 
 	focus = {
-	  id = B2
+	  id = PHI_7
 	  icon = GFX_goal_
 	  prerequisite = { focus = B1 }
 	  x = 3
