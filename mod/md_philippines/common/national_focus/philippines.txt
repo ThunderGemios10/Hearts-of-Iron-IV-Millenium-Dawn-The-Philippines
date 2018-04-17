@@ -403,7 +403,7 @@ focus_tree = {
 			focus = PHI_Air_Force_Modernization
 		}
 		mutually_exclusive = {
-			focus = PHI_Jet_Bomber
+			focus = PHI_Bomber
 		}
 		x = 19
 		y = 2
