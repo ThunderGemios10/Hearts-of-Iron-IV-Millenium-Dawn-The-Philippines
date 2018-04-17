@@ -1,161 +1,622 @@
 focus_tree = {
-	id = philippine_focus
-	
+	id = philippines
 	country = {
 		factor = 0
-		
 		modifier = {
 			add = 10
 			tag = PHI
 		}
 	}
-	
 	default = no
-	
-	# Military Line
 	focus = {
-	  id = PHI_AFP_Modernization_Program
-	  icon = GFX_goal_
-	  x = 1
-	  y = 0
-	  cost = 10
-	  completion_reward = {
-
-	  }
-
+		id = PHI_AFP_Modernization
+		icon = GFX_goal_unknown
+		cost = 50.00
+		x = 14
+		y = 0
 
 	}
-	
-	# Army Focus
 	focus = {
-	  id = PHI_Army_Modernization
-	  icon = GFX_goal_
-	  prerequisite = { focus = PHI_AFP_Modernization_Program }
-	  x = 1
-	  y = 0
-	  cost = 10
-	  completion_reward = {
-
-	  }
-
+		id = PHI_Industrial_Effort
+		icon = GFX_goal_unknown
+		cost = 50.00
+		x = 29
+		y = 0
 
 	}
-	
-	# Equipment Line
 	focus = {
-	  id = PHI_Equipment_Effort
-	  icon = GFX_goal_
-	  prerequisite = { focus = PHI_Army_Modernization }
-	  x = 1
-	  y = 0
-	  cost = 10
-	  completion_reward = {
-
-	  }
-
+		id = PHI_Political_Effort
+		icon = GFX_goal_unknown
+		cost = 50.00
+		x = 40
+		y = 0
 
 	}
-	
 	focus = {
-	  id = PHI_Equipment_Effort_II
-	  icon = GFX_goal_
-	  prerequisite = { focus = PHI_Equipment_Effort }
-	  x = 1
-	  y = 0
-	  cost = 10
-	  completion_reward = {
-
-	  }
-
+		id = PHI_Army_Modernization
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_AFP_Modernization
+		}
+		x = 7
+		y = 1
 
 	}
-	
-	# Motorized Line
 	focus = {
-	  id = PHI_Motorized_Effort
-	  icon = GFX_goal_
-	  prerequisite = { focus = PHI_Army_Modernization }
-	  x = 1
-	  y = 0
-	  cost = 10
-	  completion_reward = {
-
-	  }
-
+		id = PHI_Equipment_Effort
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Army_Modernization
+		}
+		x = 4
+		y = 2
 
 	}
-	
 	focus = {
-	  id = PHI_Motorized_Effort_II
-	  icon = GFX_goal_
-	  prerequisite = { focus = PHI_Motorized_Effort }
-	  x = 1
-	  y = 0
-	  cost = 10
-	  completion_reward = {
-
-	  }
-
+		id = PHI_Equipment_Effort_II
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Equipment_Effort
+		}
+		x = 4
+		y = 3
 
 	}
-	
-	# Doctrine Line
 	focus = {
-	  id = PHI_Doctrine_Effort
-	  icon = GFX_goal_
-	  prerequisite = { focus = PHI_Army_Modernization }
-	  x = 1
-	  y = 0
-	  cost = 10
-	  completion_reward = {
-
-	  }
-
+		id = PHI_Motorized_Effort
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Army_Modernization
+		}
+		x = 7
+		y = 2
 
 	}
-	
 	focus = {
-	  id = PHI_Doctrine_Effort_II
-	  icon = GFX_goal_
-	  prerequisite = { focus = PHI_Doctrine_Effort }
-	  x = 1
-	  y = 0
-	  cost = 10
-	  completion_reward = {
-
-	  }
-
+		id = PHI_Motorized_Effort_II
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Motorized_Effort
+		}
+		x = 7
+		y = 3
 
 	}
-	
-	# Armored Line
 	focus = {
-	  id = PHI_Armored_Effort
-	  icon = GFX_goal_
-	  prerequisite = { focus = PHI_Equipment_Effort_II }
-	  prerequisite = { focus = PHI_Motorized_Effort_II }
-	  prerequisite = { focus = PHI_Doctrine_Effort_II }
-	  x = 1
-	  y = 0
-	  cost = 10
-	  completion_reward = {
-
-	  }
-
+		id = PHI_Doctrine_Effort
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Army_Modernization
+		}
+		x = 10
+		y = 2
 
 	}
-	
 	focus = {
-	  id = PHI_Armored_Effort_II
-	  icon = GFX_goal_
-	  prerequisite = { focus = PHI_Armored_Effort }
-	  x = 1
-	  y = 0
-	  cost = 10
-	  completion_reward = {
+		id = PHI_Doctrine_Effort_II
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Doctrine_Effort
+		}
+		x = 10
+		y = 3
 
-	  }
+	}
+	focus = {
+		id = PHI_Armored_Effort
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Equipment_Effort_II
+		}
+		prerequisite = {
+			focus = PHI_Motorized_Effort_II
+		}
+		prerequisite = {
+			focus = PHI_Doctrine_Effort_II
+		}
+		x = 7
+		y = 4
 
+	}
+	focus = {
+		id = PHI_Navy_Modernization
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_AFP_Modernization
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = PHI_Flexible_Navy
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Navy_Modernization
+		}
+		mutually_exclusive = {
+			focus = PHI_Large_Navy
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = PHI_Submarine_Effort
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Flexible_Navy
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = PHI_Destroyer_Effort
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Submarine_Effort
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = PHI_Large_Navy
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Navy_Modernization
+		}
+		mutually_exclusive = {
+			focus = PHI_Flexible_Navy
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = PHI_Cruiser_Effort
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Large_Navy
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = PHI_Capital_Ship_Effort
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Cruiser_Effort
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = PHI_Naval_Doctrine
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Destroyer_Effort
+			focus = PHI_Capital_Ship_Effort
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = PHI_Air_Force_Modernization
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_AFP_Modernization
+		}
+		x = 20
+		y = 1
+
+	}
+	focus = {
+		id = PHI_Jet_Fighter
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Air_Force_Modernization
+		}
+		mutually_exclusive = {
+			focus = PHI_Jet_Bomber
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = PHI_CAS_Effort
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Jet_Fighter
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = PHI_Jet_Bomber
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Air_Force_Modernization
+		}
+		mutually_exclusive = {
+			focus = PHI_Jet_Fighter
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = PHI_Air_Doctrine
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Jet_Fighter
+			focus = PHI_Jet_Bomber
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = PHI_NAV_Effort
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Jet_Bomber
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = PHI_Industrialization_Manila
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Industrial_Effort
+		}
+		x = 24
+		y = 1
+
+	}
+	focus = {
+		id = PHI_Infrastructure_Effort_Manila
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Industrialization_Manila
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = PHI_Industrialization_Luzon
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Industrial_Effort
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = PHI_Infrastructure_Effort_Luzon
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Industrialization_Luzon
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = PHI_Industrialization_Visayas
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Industrial_Effort
+		}
+		x = 31
+		y = 1
+
+	}
+	focus = {
+		id = PHI_Infrastructure_Effort_Visayas
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PHI_Industrialization_Visayas
+		}
+		x = 31
+		y = 2
+
+	}
+	focus = {
+		id = PHI_Industrialization_Mindanao
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Industrial_Effort
+		}
+		x = 34
+		y = 1
+
+	}
+	focus = {
+		id = PHI_Infrastructure_Effort_Mindanao
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Industrialization_Mindanao
+		}
+		x = 34
+		y = 2
+
+	}
+	focus = {
+		id = PHI_Civilian_Industry
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Infrastructure_Effort_Manila
+		}
+		prerequisite = {
+			focus = PHI_Infrastructure_Effort_Luzon
+		}
+		prerequisite = {
+			focus = PHI_Infrastructure_Effort_Visayas
+		}
+		prerequisite = {
+			focus = PHI_Infrastructure_Effort_Mindanao
+		}
+		mutually_exclusive = {
+			focus = PHI_Military_Industry
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = PHI_Military_Industry
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Infrastructure_Effort_Manila
+		}
+		prerequisite = {
+			focus = PHI_Infrastructure_Effort_Luzon
+		}
+		prerequisite = {
+			focus = PHI_Infrastructure_Effort_Visayas
+		}
+		prerequisite = {
+			focus = PHI_Infrastructure_Effort_Mindanao
+		}
+		mutually_exclusive = {
+			focus = PHI_Civilian_Industry
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = PHI_Legacy_Marcos
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Political_Effort
+		}
+		mutually_exclusive = {
+			focus = PHI_Strengthen_Republic
+			focus = PHI_Strengthen_Republic
+		}
+		x = 37
+		y = 1
+
+	}
+	focus = {
+		id = PHI_Endorse_Marcos_Groups
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Legacy_Marcos
+		}
+		x = 37
+		y = 2
+
+	}
+	focus = {
+		id = PHI_Overthrow_Government
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Endorse_Marcos_Groups
+		}
+		x = 37
+		y = 3
+
+	}
+	focus = {
+		id = PHI_Strengthen_Republic
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Political_Effort
+		}
+		mutually_exclusive = {
+			focus = PHI_Legacy_Marcos
+			focus = PHI_Legacy_Marcos
+			focus = PHI_The_Left
+		}
+		x = 40
+		y = 1
+
+	}
+	focus = {
+		id = PHI_Guarantee_Freedom
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Strengthen_Republic
+		}
+		x = 39
+		y = 2
+
+	}
+	focus = {
+		id = PHI_Guarantee_Freedom_Religion
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PHI_Strengthen_Republic
+		}
+		x = 41
+		y = 2
+
+	}
+	focus = {
+		id = PHI_Reform_National_Bank
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Guarantee_Freedom
+		}
+		prerequisite = {
+			focus = PHI_Guarantee_Freedom_Religion
+		}
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = PHI_Naval_Doctrine_II
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Naval_Doctrine
+		}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = PHI_Infrastructure_Expansion
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Civilian_Industry
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = PHI_Military_Industry_II
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Military_Industry
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = PHI_Naval_Dockyard
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Military_Industry_II
+		}
+		x = 31
+		y = 5
+
+	}
+	focus = {
+		id = PHI_Naval_Dockyard_II
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Naval_Dockyard
+		}
+		x = 31
+		y = 6
+
+	}
+	focus = {
+		id = PHI_The_Left
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Political_Effort
+		}
+		mutually_exclusive = {
+			focus = PHI_Strengthen_Republic
+		}
+		x = 43
+		y = 1
+
+	}
+	focus = {
+		id = PHI_Legalize_CPP
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_The_Left
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = PHI_Return_Jose_Sison
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = PHI_Legalize_CPP
+		}
+		x = 43
+		y = 3
+
+	}
+	focus = {
+		id = PHI_Revolution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = PHI_Return_Jose_Sison
+		}
+		x = 43
+		y = 4
 
 	}
 }
