@@ -775,6 +775,10 @@ focus_tree = {
 		}
 		x = 37
 		y = 1
+		
+		completion_reward = {
+			increase_nationalist_influence_by_1 = yes
+		}
 
 	}
 	focus = {
@@ -786,6 +790,10 @@ focus_tree = {
 		}
 		x = 37
 		y = 2
+		
+		completion_reward = {
+			increase_nationalist_influence_by_1 = yes
+		}
 
 	}
 	focus = {
@@ -797,6 +805,18 @@ focus_tree = {
 		}
 		x = 37
 		y = 3
+		
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_government = nationalist } }
+				add_stability = -0.15
+			}
+			increase_nationalist_influence_by_1 = yes
+			set_politics = {
+				ruling_party = nationalist
+				elections_allowed = yes
+			}
+		}
 
 	}
 	focus = {
@@ -813,6 +833,11 @@ focus_tree = {
 		}
 		x = 40
 		y = 1
+		
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = 100
+		}
 
 	}
 	focus = {
@@ -824,6 +849,9 @@ focus_tree = {
 		}
 		x = 39
 		y = 2
+		completion_reward = {
+			add_stability = 0.05
+		}
 
 	}
 	focus = {
@@ -835,6 +863,10 @@ focus_tree = {
 		}
 		x = 41
 		y = 2
+		
+		completion_reward = {
+			add_stability = 0.05
+		}
 
 	}
 	focus = {
@@ -849,6 +881,10 @@ focus_tree = {
 		}
 		x = 40
 		y = 3
+		
+		completion_reward = {
+			add_political_power = 100
+		}
 
 	}
 	focus = {
@@ -860,6 +896,15 @@ focus_tree = {
 		}
 		x = 14
 		y = 6
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_doctrine_bonus
+				bonus = 0.3
+				uses = 2
+				category = naval_doctrine
+			}
+		}
 
 	}
 	focus = {
@@ -871,6 +916,16 @@ focus_tree = {
 		}
 		x = 28
 		y = 4
+		
+		completion_reward = {
+			623 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -882,6 +937,24 @@ focus_tree = {
 		}
 		x = 30
 		y = 4
+		
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}	
+			}
+		}
 
 	}
 	focus = {
@@ -893,6 +966,24 @@ focus_tree = {
 		}
 		x = 31
 		y = 5
+		
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -904,6 +995,24 @@ focus_tree = {
 		}
 		x = 31
 		y = 6
+		
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -918,6 +1027,10 @@ focus_tree = {
 		}
 		x = 43
 		y = 1
+		
+		completion_reward = {
+			increase_communist_influence_by_1 = yes
+		}
 
 	}
 	focus = {
@@ -929,7 +1042,14 @@ focus_tree = {
 		}
 		x = 43
 		y = 2
-
+		
+		completion_reward = {
+			increase_communist_influence_by_1 = yes
+			add_popularity = {
+				ideology = communist
+				popularity = 0.15
+			}
+		}
 	}
 	focus = {
 		id = PHI_Return_Jose_Sison
@@ -940,6 +1060,14 @@ focus_tree = {
 		}
 		x = 43
 		y = 3
+		
+		completion_reward = {
+			increase_communist_influence_by_1 = yes
+			add_popularity = {
+				ideology = communist
+				popularity = 0.15
+			}
+		}
 
 	}
 	focus = {
@@ -951,6 +1079,17 @@ focus_tree = {
 		}
 		x = 43
 		y = 4
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = communist
+				popularity = 0.15
+			}
+			set_politics = {
+				ruling_party = nationalist
+				elections_allowed = no
+			}
+		}
 
 	}
 }
