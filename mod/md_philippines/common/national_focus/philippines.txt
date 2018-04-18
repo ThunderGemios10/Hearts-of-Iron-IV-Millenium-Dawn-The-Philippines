@@ -8,170 +8,171 @@ focus_tree = {
 		}
 	}
 	default = no
-	
-	# Military Modernization
 	focus = {
 		id = PHI_AFP_Modernization
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
 		x = 14
 		y = 0
-		
-		completion_reward = {
-			army_experience = 10
-			navy_experience = 10
-			air_experience = 10
-		}
+			completion_reward = {
+					army_experience = 10
+					navy_experience = 10
+					air_experience = 10
+				}
+
 	}
-	
-	# Industrial Effort
 	focus = {
 		id = PHI_Industrial_Effort
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
 		x = 29
 		y = 0
-		
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = industry }
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = industry
+						}
+				}
 
 	}
-	
-	# Political Effort
 	focus = {
 		id = PHI_Political_Effort
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10.00
 		x = 40
 		y = 0
-		
-		completion_reward = {
-			add_political_power = 120
-		}
+			completion_reward = {
+					add_political_power = 120
+				}
 
 	}
-	
-	# Army Modernization
 	focus = {
 		id = PHI_Army_Modernization
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_focus_chi_army_reform
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_AFP_Modernization
 		}
 		x = 7
 		y = 1
-		
-		completion_reward = {
-			army_experience = 10
-		}
+			completion_reward = {
+					army_experience = 10
+				}
 
 	}
-	
-	# Equipment Effort Line
 	focus = {
 		id = PHI_Equipment_Effort
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Army_Modernization
 		}
 		x = 4
 		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+						}
+				}
 
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = infantry_weapons }
-		}
 	}
-	
 	focus = {
 		id = PHI_Equipment_Effort_II
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Equipment_Effort
 		}
 		x = 4
 		y = 3
-		
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = infantry_weapons }
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+						}
+				}
 
 	}
-	
-	# Motorized Line
 	focus = {
 		id = PHI_Motorized_Effort
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Army_Modernization
 		}
 		x = 7
 		y = 2
-		
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = motorized_equipment }
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = motorized_equipment
+						}
+				}
 
 	}
-	
 	focus = {
 		id = PHI_Motorized_Effort_II
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Motorized_Effort
 		}
 		x = 7
 		y = 3
-		
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = motorized_equipment }
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = motorized_equipment
+						}
+				}
 
 	}
-	
-	# Doctrine Line
 	focus = {
 		id = PHI_Doctrine_Effort
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Army_Modernization
 		}
 		x = 10
 		y = 2
-		
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = land_doctrine }
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = land_doctrine
+						}
+				}
 
 	}
-	
 	focus = {
 		id = PHI_Doctrine_Effort_II
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Doctrine_Effort
 		}
 		x = 10
 		y = 3
-		
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = land_doctrine }
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = land_doctrine
+						}
+				}
 
 	}
-	
-	# Armored Line
 	focus = {
 		id = PHI_Armored_Effort
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_focus_generic_army_tanks2
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Equipment_Effort_II
 		}
@@ -183,33 +184,33 @@ focus_tree = {
 		}
 		x = 7
 		y = 4
-		
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = armor }
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = armor
+						}
+				}
 
 	}
-	
-	# Navy Modernization
 	focus = {
 		id = PHI_Navy_Modernization
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_build_navy
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_AFP_Modernization
 		}
 		x = 14
 		y = 1
-		
-		completion_reward = {
-			navy_experience = 10
-		}
+			completion_reward = {
+					navy_experience = 10
+				}
 
 	}
 	focus = {
 		id = PHI_Flexible_Navy
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_build_navy
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Navy_Modernization
 		}
@@ -218,70 +219,61 @@ focus_tree = {
 		}
 		x = 13
 		y = 2
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = sub_op_bonus
-				bonus = 0.5
-				uses = 2
-				technology = convoy_interdiction_ti
-				technology = unrestricted_submarine_warfare
-				technology = wolfpacks
-				technology = advanced_submarine_warfare
-				technology = combined_operations_raiding
-			}
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							name = sub_op_bonus
+							bonus = 0.5
+							uses = 2
+							technology = convoy_interdiction_ti
+							technology = unrestricted_submarine_warfare
+							technology = wolfpacks
+							technology = advanced_submarine_warfare
+							technology = combined_operations_raiding
+						}
+				}
 
 	}
-	
-	# Submarine Effort
 	focus = {
 		id = PHI_Submarine_Effort
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Flexible_Navy
 		}
 		x = 13
 		y = 3
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = sub_bonus
-				bonus = 0.4
-				uses = 2
-				category = ss_tech
-			}
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							name = sub_bonus
+							bonus = 0.4
+							uses = 2
+							category = ss_tech
+						}
+				}
 
 	}
-	
-	# Destroyer Effort
 	focus = {
 		id = PHI_Destroyer_Effort
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_wolf_pack
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Submarine_Effort
 		}
 		x = 13
 		y = 4
-		
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.4
-				uses = 2
-				category = dd_tech
-			}
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.4
+							uses = 2
+							category = dd_tech
+						}
+				}
 
 	}
-	
-	# Large Navy
 	focus = {
 		id = PHI_Large_Navy
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Navy_Modernization
 		}
@@ -290,105 +282,92 @@ focus_tree = {
 		}
 		x = 15
 		y = 2
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 0.5
-				uses = 2
-				category = fleet_in_being_tree
-			}
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 0.5
+							uses = 2
+							category = fleet_in_being_tree
+						}
+				}
 
 	}
-	
-	# Cruiser Effort
 	focus = {
 		id = PHI_Cruiser_Effort
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Large_Navy
 		}
 		x = 15
 		y = 3
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = carrier_bonus
-				bonus = 0.4
-				uses = 1
-				category = ca_tech
-			}
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							name = carrier_bonus
+							bonus = 0.4
+							uses = 1
+							category = ca_tech
+						}
+				}
 
 	}
-	
-	# Capital Ship Effort
 	focus = {
 		id = PHI_Capital_Ship_Effort
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Cruiser_Effort
 		}
 		x = 15
 		y = 4
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = cruiser_bonus
-				bonus = 0.3
-				uses = 2
-				category = ca_tech
-			}
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							name = cruiser_bonus
+							bonus = 0.3
+							uses = 2
+							category = ca_tech
+						}
+				}
 
 	}
-	
-	# Naval Doctrine
 	focus = {
 		id = PHI_Naval_Doctrine
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Destroyer_Effort
 			focus = PHI_Capital_Ship_Effort
 		}
 		x = 14
 		y = 5
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = nav_doctrine_bonus
-				bonus = 0.3
-				uses = 2
-				category = naval_doctrine
-			}
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							name = nav_doctrine_bonus
+							bonus = 0.3
+							uses = 2
+							category = naval_doctrine
+						}
+				}
 
 	}
-	
-	# Air Force Modernization
 	focus = {
 		id = PHI_Air_Force_Modernization
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_build_airforce
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_AFP_Modernization
 		}
 		x = 20
 		y = 1
-		
-		completion_reward = {
-			air_experience = 10
-		}
+			completion_reward = {
+					air_experience = 10
+				}
 
 	}
 	focus = {
 		id = PHI_Fighter
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Air_Force_Modernization
 		}
@@ -397,31 +376,42 @@ focus_tree = {
 		}
 		x = 19
 		y = 2
-		
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = light_fighter }
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = cat_heavy_fighter }
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = light_fighter
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = cat_heavy_fighter
+						}
+				}
 
 	}
 	focus = {
 		id = PHI_Jet_Fighter
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Fighter
 		}
 		x = 19
 		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = jet_technology
+						}
+				}
 
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = jet_technology }
-		}
 	}
 	focus = {
 		id = PHI_Bomber
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Air_Force_Modernization
 		}
@@ -430,222 +420,230 @@ focus_tree = {
 		}
 		x = 21
 		y = 2
-		
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = tactical_bomber }
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = cat_strategic_bomber }
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = cas_bomber }
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = tactical_bomber
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = cat_strategic_bomber
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = cas_bomber
+						}
+				}
 
 	}
 	focus = {
 		id = PHI_Air_Doctrine
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Fighter
 			focus = PHI_Bomber
 		}
 		x = 20
 		y = 3
-		
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = air_doctrine }
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = air_doctrine
+						}
+				}
 
 	}
 	focus = {
 		id = PHI_NAV_Effort
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Bomber
 		}
 		x = 21
 		y = 4
-		
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = naval_bomber }
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = naval_bomber
+						}
+				}
 
 	}
 	focus = {
 		id = PHI_Industrialization_Manila
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Industrial_Effort
 		}
 		x = 24
 		y = 1
-		
-		completion_reward = {
-			327 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}	
-			}
-		}
+			completion_reward = {
+					327 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
 
 	}
 	focus = {
 		id = PHI_Infrastructure_Effort_Manila
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Industrialization_Manila
 		}
 		x = 24
 		y = 2
-		
-		completion_reward = {
-			327 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+			completion_reward = {
+					327 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
 				}
-			}
-		}
 
 	}
 	focus = {
 		id = PHI_Industrialization_Luzon
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Industrial_Effort
 		}
 		x = 27
 		y = 1
-		
-		completion_reward = {
-			623 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}	
-			}
-		}
+			completion_reward = {
+					623 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
 
 	}
-	
 	focus = {
 		id = PHI_Infrastructure_Effort_Luzon
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Industrialization_Luzon
 		}
 		x = 27
 		y = 2
-		
-		completion_reward = {
-			623 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+			completion_reward = {
+					623 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
 				}
-			}
-		}
 
 	}
 	focus = {
 		id = PHI_Industrialization_Visayas
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Industrial_Effort
 		}
 		x = 31
 		y = 1
-		
-		completion_reward = {
-			624 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}	
-			}
-		}
+			completion_reward = {
+					624 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
 
 	}
 	focus = {
 		id = PHI_Infrastructure_Effort_Visayas
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Industrialization_Visayas
 		}
 		x = 31
 		y = 2
-		
-		completion_reward = {
-			624 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+			completion_reward = {
+					624 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
 				}
-			}
-		}
 
 	}
 	focus = {
 		id = PHI_Industrialization_Mindanao
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Industrial_Effort
 		}
 		x = 34
 		y = 1
-		
-		completion_reward = {
-			627 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}	
-			}
-		}
+			completion_reward = {
+					627 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
 
 	}
 	focus = {
 		id = PHI_Infrastructure_Effort_Mindanao
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Industrialization_Mindanao
 		}
 		x = 34
 		y = 2
-		
-		completion_reward = {
-			627 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+			completion_reward = {
+					627 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
 				}
-			}
-		}
 
 	}
 	focus = {
 		id = PHI_Civilian_Industry
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Infrastructure_Effort_Manila
 		}
@@ -663,23 +661,22 @@ focus_tree = {
 		}
 		x = 28
 		y = 3
-		
-		completion_reward = {
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}	
-			}
-		}
+			completion_reward = {
+					random_owned_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
 
 	}
 	focus = {
 		id = PHI_Military_Industry
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Infrastructure_Effort_Manila
 		}
@@ -697,130 +694,126 @@ focus_tree = {
 		}
 		x = 30
 		y = 3
-		
-		completion_reward = {
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}	
-			}
-		}
+			completion_reward = {
+					random_owned_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
 
 	}
 	focus = {
 		id = PHI_Legacy_Marcos
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_support_fascism
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Political_Effort
 		}
 		mutually_exclusive = {
 			focus = PHI_Strengthen_Republic
-			focus = PHI_Strengthen_Republic
 		}
 		x = 37
 		y = 1
-		
-		completion_reward = {
-			increase_nationalist_influence_by_1 = yes
-		}
+			completion_reward = {
+					increase_nationalist_influence_by_1 = yes
+				}
 
 	}
 	focus = {
 		id = PHI_Endorse_Marcos_Groups
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Legacy_Marcos
 		}
 		x = 37
 		y = 2
-		
-		completion_reward = {
-			increase_nationalist_influence_by_1 = yes
-		}
+			completion_reward = {
+					increase_nationalist_influence_by_1 = yes
+				}
 
 	}
 	focus = {
 		id = PHI_Overthrow_Government
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Endorse_Marcos_Groups
 		}
 		x = 37
 		y = 3
-		
-		completion_reward = {
-			if = {
-				limit = { NOT = { has_government = nationalist } }
-				add_stability = -0.15
-			}
-			increase_nationalist_influence_by_1 = yes
-			set_politics = {
-				ruling_party = nationalist
-				elections_allowed = yes
-			}
-		}
+			completion_reward = {
+					if = {
+							limit = {
+									NOT = {
+											has_government = nationalist
+										}
+								}
+							add_stability = -0.15
+						}
+					increase_nationalist_influence_by_1 = yes
+					set_politics = {
+							ruling_party = nationalist
+							elections_allowed = yes
+						}
+				}
 
 	}
 	focus = {
 		id = PHI_Strengthen_Republic
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_support_democracy
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Political_Effort
 		}
 		mutually_exclusive = {
 			focus = PHI_Legacy_Marcos
-			focus = PHI_Legacy_Marcos
 			focus = PHI_The_Left
 		}
 		x = 40
 		y = 1
-		
-		completion_reward = {
-			add_stability = 0.15
-			add_political_power = 100
-		}
+			completion_reward = {
+					add_stability = 0.15
+					add_political_power = 100
+				}
 
 	}
 	focus = {
 		id = PHI_Guarantee_Freedom
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Strengthen_Republic
 		}
 		x = 39
 		y = 2
-		completion_reward = {
-			add_stability = 0.05
-		}
+			completion_reward = {
+					add_stability = 0.05
+				}
 
 	}
 	focus = {
 		id = PHI_Guarantee_Freedom_Religion
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Strengthen_Republic
 		}
 		x = 41
 		y = 2
-		
-		completion_reward = {
-			add_stability = 0.05
-		}
+			completion_reward = {
+					add_stability = 0.05
+				}
 
 	}
 	focus = {
 		id = PHI_Reform_National_Bank
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Guarantee_Freedom
 		}
@@ -829,137 +822,131 @@ focus_tree = {
 		}
 		x = 40
 		y = 3
-		
-		completion_reward = {
-			add_political_power = 100
-		}
+			completion_reward = {
+					add_political_power = 100
+				}
 
 	}
 	focus = {
 		id = PHI_Naval_Doctrine_II
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Naval_Doctrine
 		}
 		x = 14
 		y = 6
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = nav_doctrine_bonus
-				bonus = 0.3
-				uses = 2
-				category = naval_doctrine
-			}
-		}
+			completion_reward = {
+					add_tech_bonus = {
+							name = nav_doctrine_bonus
+							bonus = 0.3
+							uses = 2
+							category = naval_doctrine
+						}
+				}
 
 	}
 	focus = {
 		id = PHI_Infrastructure_Expansion
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Civilian_Industry
 		}
 		x = 28
 		y = 4
-		
-		completion_reward = {
-			623 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+			completion_reward = {
+					623 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
 				}
-			}
-		}
 
 	}
 	focus = {
 		id = PHI_Military_Industry_II
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Military_Industry
 		}
 		x = 30
 		y = 4
-		
-		completion_reward = {
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}	
-			}
-		}
+			completion_reward = {
+					random_owned_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
 
 	}
 	focus = {
 		id = PHI_Naval_Dockyard
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Military_Industry_II
 		}
 		x = 31
 		y = 5
-		
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
+			completion_reward = {
+					random_owned_state = {
+							limit = {
+									free_building_slots = {
+											building = dockyard
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = dockyard
+									level = 1
+									instant_build = yes
+								}
+						}
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
 
 	}
 	focus = {
 		id = PHI_Naval_Dockyard_II
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Naval_Dockyard
 		}
 		x = 31
 		y = 6
-		
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
+			completion_reward = {
+					random_owned_state = {
+							limit = {
+									free_building_slots = {
+											building = dockyard
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = dockyard
+									level = 1
+									instant_build = yes
+								}
+						}
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
 
 	}
 	focus = {
 		id = PHI_The_Left
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_support_communism
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Political_Effort
 		}
@@ -968,69 +955,66 @@ focus_tree = {
 		}
 		x = 43
 		y = 1
-		
-		completion_reward = {
-			increase_communist_influence_by_1 = yes
-		}
+			completion_reward = {
+					increase_communist_influence_by_1 = yes
+				}
 
 	}
 	focus = {
 		id = PHI_Legalize_CPP
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_The_Left
 		}
 		x = 43
 		y = 2
-		
-		completion_reward = {
-			increase_communist_influence_by_1 = yes
-			add_popularity = {
-				ideology = communist
-				popularity = 0.15
-			}
-		}
+			completion_reward = {
+					increase_communist_influence_by_1 = yes
+					add_popularity = {
+							ideology = communist
+							popularity = 0.15
+						}
+				}
+
 	}
 	focus = {
 		id = PHI_Return_Jose_Sison
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Legalize_CPP
 		}
 		x = 43
 		y = 3
-		
-		completion_reward = {
-			increase_communist_influence_by_1 = yes
-			add_popularity = {
-				ideology = communist
-				popularity = 0.15
-			}
-		}
+			completion_reward = {
+					increase_communist_influence_by_1 = yes
+					add_popularity = {
+							ideology = communist
+							popularity = 0.15
+						}
+				}
 
 	}
 	focus = {
 		id = PHI_Revolution
-		icon = GFX_goal_unknown
-		cost = 10
+		icon = GFX_focus_prc_maoism
+		cost = 10.00
 		prerequisite = {
 			focus = PHI_Return_Jose_Sison
 		}
 		x = 43
 		y = 4
-		
-		completion_reward = {
-			add_popularity = {
-				ideology = communist
-				popularity = 0.15
-			}
-			set_politics = {
-				ruling_party = nationalist
-				elections_allowed = no
-			}
-		}
+			completion_reward = {
+					add_popularity = {
+							ideology = communist
+							popularity = 0.15
+						}
+					set_politics = {
+							ruling_party = nationalist
+							elections_allowed = no
+						}
+				}
 
 	}
 }
